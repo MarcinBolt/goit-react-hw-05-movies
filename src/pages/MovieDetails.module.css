@@ -1,0 +1,140 @@
+.goBack {
+  position: absolute;
+  top: 90px;
+  padding-inline: 10px;
+  padding-block: 5px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgb(88, 88, 88);
+  font-weight: 500;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(253, 99, 43);
+}
+
+.goBack:hover {
+  background-color: rgb(253, 99, 43);
+  color: rgb(255, 255, 255);
+}
+.goBack:active {
+  box-shadow: 1px 1px 1px 1px rgb(88, 88, 88);
+}
+
+.h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+  color: rgb(253, 99, 43);
+}
+
+.h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+  color: rgb(253, 99, 43);
+}
+
+.p {
+  margin: 0;
+  padding: 0;
+  max-width: 600px;
+  font-size: 16px;
+}
+.rating {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  margin: 0;
+  padding-bottom: 15px;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(253, 99, 43);
+}
+
+.rating__rate {
+  margin: 0;
+  font-size: 35px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+
+.description__block {
+  display: flex;
+  flex-direction: column;
+  padding-block: 20px;
+}
+
+.poster {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  min-width: 300px;
+  overflow: hidden;
+}
+.description {
+  margin: 0;
+  padding: 0;
+}
+.img {
+  margin: 0;
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.li {
+  list-style: none;
+}
+
+.movieCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 25px;
+  padding: 65px 20px 30px 20px;
+}
+
+.additionalInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.navLink {
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgb(88, 88, 88);
+  font-weight: 500;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(253, 99, 43);
+  padding: 5px 10px;
+}
+
+.navLink:hover {
+  background-color: rgb(253, 99, 43);
+  color: rgb(255, 255, 255);
+}
+.navLink:active {
+  background-color: rgb(253, 99, 43);
+  color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 1px 1px rgb(88, 88, 88);
+}
