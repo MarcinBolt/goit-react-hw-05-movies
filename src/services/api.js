@@ -13,7 +13,6 @@ export const getTrendingMovies = async () => {
 export const getMoviesByQuery = async query => {
   const url = `search/movie?${API_KEY_AND_LANG}&query=${query}&page=1&include_adult=false`;
   const response = await axios.get(url);
-  console.log(response.data);
   return response.data;
 };
 

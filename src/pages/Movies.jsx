@@ -56,7 +56,7 @@ const Movies = () => {
           ))}
         </ul>
       ) : (
-        totalResults === 0 ?? (
+        totalResults ?? (
           <div className={css.noMatch}>We do not have this movie title in our database.</div>
         )
       )}
