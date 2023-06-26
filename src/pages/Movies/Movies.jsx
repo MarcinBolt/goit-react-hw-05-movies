@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation, useSearchParams } from 'react-router-dom';
-import { getMoviesByQuery } from '../services/api';
+import { getMoviesByQuery } from '../../services/api';
 import css from './Movies.module.css';
 
 const Movies = () => {

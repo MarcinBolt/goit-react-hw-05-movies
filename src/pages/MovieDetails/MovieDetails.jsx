@@ -1,6 +1,6 @@
 import { Suspense, useRef, useEffect, useState } from 'react';
 import { Link, NavLink, Outlet, useLocation, useParams } from 'react-router-dom';
-import { getMovieDetailsByItsId } from '../services/api';
+import { getMovieDetailsByItsId } from '../../services/api';
 import css from './MovieDetails.module.css';
 
 const MovieDetails = () => {
