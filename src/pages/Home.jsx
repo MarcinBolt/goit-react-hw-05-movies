@@ -8,9 +8,12 @@ const Home = () => {
   const location = useLocation();
 
   useEffect(() => {
-    getTrendingMovies()
-      .then(setMovies)
-      .catch(error => console.log(error.message));
+    const fetchTrendingMovies = async () => {
+      const response = await getTrendingMovies();
+      setMovies(response);
+    };
+
+    fetchTrendingMovies();
   }, []);
 
   return (

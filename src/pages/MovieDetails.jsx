@@ -9,16 +9,12 @@ const MovieDetails = () => {
   const location = useLocation();
   const backLinkRef = useRef(location.state?.from ?? '/');
 
-  const passMovieDetails = async id => {
-    try {
+  useEffect(() => {
+    const passMovieDetails = async id => {
       const movieDetails = await getMovieDetailsByItsId(id);
       setMovie(movieDetails);
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
+    };
 
-  useEffect(() => {
     passMovieDetails(movieId);
   }, [movieId]);
 

@@ -1,9 +1,28 @@
 .input {
-   padding: 5px; 
-   margin: 20px;
-   width: 250px;
-   font-size: 22px;
-   font-weight: 500;
+  padding: 5px;
+  margin: 20px;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.searchButton {
+  padding-inline: 10px;
+  padding-block: 5px;
+  margin: 20px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgb(88, 88, 88);
+  font-weight: 500;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(253, 99, 43);
+}
+
+.searchButton:hover {
+  background-color: rgb(253, 99, 43);
+  color: rgb(255, 255, 255);
+  border: 0;
 }
 
 .li {
@@ -26,4 +45,13 @@
 .link:active {
   background-color: rgb(253, 99, 43);
   color: rgb(255, 255, 255);
+}
+
+.goBack:active {
+  box-shadow: 0 0 0 1px rgb(143, 143, 143);
+}
+
+.noMatch {
+  padding-inline: 20px;
+  font-size: 22px;
 }

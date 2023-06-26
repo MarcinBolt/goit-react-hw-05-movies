@@ -8,32 +8,31 @@ const Reviews = () => {
   const { movieId } = useParams();
 
   useEffect(() => {
-    getMovieReviewsByItsId(movieId)
-      .then(setMovieReviews)
-      .catch(error => console.log(error.message));
+    const fetchMovieReviews = async () => {
+      const reviews = await getMovieReviewsByItsId(movieId);
+      setMovieReviews(reviews);
+    };
+    fetchMovieReviews();
   }, [movieId]);
 
-  if (!movieReviews) {
-    return;
+  if (movieReviews) {
+    return (
+      <div>
+        {movieReviews.length > 0 ? (
+          <ul className={css.reviewsList}>
+            {movieReviews.map(review => (
+              <li className={css.reviewsList__item} key={review.id}>
+                <h3 className={css.author}>Author: {review.author}</h3>
+                <p className={css.content}>{review.content}</p>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          "We don't have any reviews for this movie"
+        )}
+      </div>
+    );
   }
-
-
-  return (
-    <div>
-      {movieReviews.length > 0 ? (
-        <ul className={css.reviewsList}>
-          {movieReviews.map(review => (
-            <li className={css.reviewsList__item} key={review.id}>
-              <h3 className={css.author}>Author: {review.author}</h3>
-              <p className={css.content}>{review.content}</p>
-            </li>
-          ))}
-        </ul>
-      ) : (
-        "We don't have any reviews for this movie"
-      )}
-    </div>
-  );
 };
 
 export default Reviews;

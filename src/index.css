@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(151, 151, 151, 0.87);
   background-color: #242424;
 
   font-synthesis: none;
@@ -71,5 +71,5 @@ button:focus-visible {
 a.active {
   background-color: rgb(253, 99, 43);
   color: rgb(255, 255, 255);
-  box-shadow: 1px 1px 1px 1px rgb(88, 88, 88);
+  box-shadow: 0 0 0 1px rgb(143, 143, 143);
 }
