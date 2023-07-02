@@ -1,4 +1,4 @@
-# goit-react-hw-04-images
+# goit-react-hw-05-movies
 
 Deploying Vite App to GitHub Pages
 #vite, #githubpages, #git, #deploy
