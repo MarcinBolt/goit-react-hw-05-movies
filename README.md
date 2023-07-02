@@ -1,6 +1,6 @@
 # goit-react-hw-05-movies
 
-Deploying Vite App to GitHub Pages using gh-pages and script deplou:
+Deploying Vite App to GitHub Pages using gh-pages and script deploy:
 -----
 1. Install gh-pages:
 
