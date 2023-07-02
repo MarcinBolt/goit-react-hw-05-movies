@@ -4,9 +4,9 @@ import css from './NotFound.module.css';
 
 const NotFound = () => {
   const location = useLocation();
-    const backToHome = useRef(location.state?.from ?? '#/');
-    const navigate = useNavigate();  
-    const backNavigate = navigate(-1);
+  const backToHome = useRef(location.state?.from ?? '/');
+  const navigate = useNavigate();
+  const backNavigate = navigate(-1);
 
   return (
     <>
